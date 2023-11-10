@@ -62,8 +62,8 @@ const cn = {
       Masks: "所有应用",
       Clear: "清除聊天",
       Settings: "对话设置",
-      EnablePlugins: "开启插件",
-      DisablePlugins: "关闭插件",
+      EnablePlugins: "插件状态:关闭",
+      DisablePlugins: "插件状态:开启",
     },
     Rename: "重命名对话",
     Typing: "正在输入…",
@@ -72,7 +72,7 @@ const cn = {
       if (submitKey === String(SubmitKey.Enter)) {
         inputHints += "，Shift + Enter 换行";
       }
-      return inputHints + "，/ 触发补全，: 触发命令";
+      return inputHints + "";
     },
     Send: "发送",
     Config: {
@@ -219,7 +219,7 @@ const cn = {
 
       LocalState: "本地聊天数据",
       Overview: (overview: any) => {
-        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个应用`;
+        return `备份全部聊天数据`;
       },
       ImportFailed: "导入失败",
     },
@@ -351,7 +351,7 @@ const cn = {
     Revert: "恢复对话记录",
   },
   Plugin: {
-    Name: "插件",
+    Name: "插件列表",
     Page: {
       Title: "全部插件",
       SubTitle: (count: number) => `${count} 个插件`,
@@ -436,8 +436,8 @@ const cn = {
     Close: "关闭",
     Create: "新建",
     Edit: "编辑",
-    Export: "全部聊天备份",
-    Import: "聊天备份导入",
+    Export: "立即备份",
+    Import: "备份导入",
     Sync: "同步",
     Config: "配置",
   },
