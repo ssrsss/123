@@ -6,9 +6,8 @@ const isApp = !!getClientConfig()?.isApp;
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: isApp
-      ? "检测到无效授权码，请前往[设置](/#/settings)页检查授权码是否配置正确。"
-      : "授权码不正确或为空，请前往[登录](/#/auth)页输入正确的授权码",
+    Unauthorized:
+      "授权码不正确或为空，请前往[登录](/#/auth)页输入正确的授权码",
   },
   Auth: {
     Title: "需要密码",
