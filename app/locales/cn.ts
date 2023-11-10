@@ -11,7 +11,7 @@ const cn = {
   },
   Auth: {
     Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    Tips: "使用前请先设备验证，请在下方填入授权码",
     SubTips: "或者输入你的 OpenAI API 密钥",
     Input: "在此处填写访问码",
     Confirm: "确认",
@@ -44,7 +44,7 @@ const cn = {
     },
     Commands: {
       new: "新建聊天",
-      newm: "从面具新建聊天",
+      newm: "从应用新建聊天",
       next: "下一个聊天",
       prev: "上一个聊天",
       clear: "清除上下文",
@@ -59,7 +59,7 @@ const cn = {
         dark: "深色模式",
       },
       Prompt: "快捷指令",
-      Masks: "所有面具",
+      Masks: "所有应用",
       Clear: "清除聊天",
       Settings: "对话设置",
       EnablePlugins: "开启插件",
@@ -77,7 +77,7 @@ const cn = {
     Send: "发送",
     Config: {
       Reset: "清除记忆",
-      SaveAs: "存为面具",
+      SaveAs: "存为应用",
     },
     IsContext: "预设提示词",
   },
@@ -93,8 +93,8 @@ const cn = {
       SubTitle: "可以导出 Markdown 文本或者 PNG 图片",
     },
     IncludeContext: {
-      Title: "包含面具上下文",
-      SubTitle: "是否在消息中展示面具上下文",
+      Title: "包含应用上下文",
+      SubTitle: "是否在消息中展示应用上下文",
     },
     Steps: {
       Select: "选取",
@@ -162,12 +162,12 @@ const cn = {
     },
 
     Update: {
-      Version: (x: string) => `当前版本：${x}`,
-      IsLatest: "已是最新版本",
-      CheckUpdate: "检查更新",
-      IsChecking: "正在检查更新...",
-      FoundUpdate: (x: string) => `发现新版本：${x}`,
-      GoToUpdate: "前往更新",
+      Version: (x: string) => `轻工具`,
+      IsLatest: "分享好用免费的轻工具",
+      CheckUpdate: "立即前往",
+      IsChecking: "加载中...",
+      FoundUpdate: (x: string) => `分享好用免费的轻工具`,
+      GoToUpdate: "立即前往",
     },
     SendKey: "发送键",
     Theme: "主题",
@@ -225,30 +225,30 @@ const cn = {
     },
     Mask: {
       Splash: {
-        Title: "面具启动页",
-        SubTitle: "新建聊天时，展示面具启动页",
+        Title: "应用启动页",
+        SubTitle: "新建聊天时，展示应用启动页",
       },
       Builtin: {
-        Title: "隐藏内置面具",
-        SubTitle: "在所有面具列表中隐藏内置面具",
+        Title: "隐藏内置应用",
+        SubTitle: "在所有应用列表中隐藏内置应用",
       },
     },
     Prompt: {
       Disable: {
-        Title: "禁用提示词自动补全",
-        SubTitle: "在输入框开头输入 / 即可触发自动补全",
+        Title: "禁用快捷指令",
+        SubTitle: "在输入框开头输入 / 即可触发",
       },
-      List: "自定义提示词列表",
+      List: "自定义快捷指令列表",
       ListCount: (builtin: number, custom: number) =>
         `内置 ${builtin} 条，用户定义 ${custom} 条`,
       Edit: "编辑",
       Modal: {
-        Title: "提示词列表",
+        Title: "快捷指令列表",
         Add: "新建",
-        Search: "搜索提示词",
+        Search: "搜索快捷指令",
       },
       EditModal: {
-        Title: "编辑提示词",
+        Title: "编辑快捷指令",
       },
     },
     HistoryCount: {
@@ -260,9 +260,9 @@ const cn = {
       SubTitle: "当未压缩的历史消息超过该值时，将进行压缩",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "使用自己的 Key 可绕过密码访问限制",
-      Placeholder: "OpenAI API Key",
+      Title: "您的Key🔑",
+      SubTitle: "您的设备授权码",
+      Placeholder: "例：sk-xxxx",
     },
 
     Usage: {
@@ -280,14 +280,14 @@ const cn = {
       Placeholder: "请输入访问密码",
     },
     Endpoint: {
-      Title: "接口地址",
-      SubTitle: "除默认地址外，必须包含 http(s)://",
+      Title: "接口地址(非必填)",
+      SubTitle: "http(s)://",
     },
     CustomModel: {
-      Title: "自定义模型名",
+      Title: "自定义模型(非必填)",
       SubTitle: "增加自定义模型可选项，使用英文逗号隔开",
     },
-    Model: "模型 (model)",
+    Model: "模型选择",
     Temperature: {
       Title: "随机性 (temperature)",
       SubTitle: "值越大，回复越随机",
@@ -297,15 +297,15 @@ const cn = {
       SubTitle: "与随机性类似，但不要和随机性一起更改",
     },
     MaxTokens: {
-      Title: "单次回复限制 (max_tokens)",
-      SubTitle: "单次交互所用的最大 Token 数",
+      Title: "单次对话字数限制",
+      SubTitle: "单次对话最高字数/上限15000",
     },
     PresencePenalty: {
-      Title: "话题新鲜度 (presence_penalty)",
+      Title: "话题新鲜度",
       SubTitle: "值越大，越有可能扩展到新话题",
     },
     FrequencyPenalty: {
-      Title: "频率惩罚度 (frequency_penalty)",
+      Title: "频率惩罚度",
       SubTitle: "值越大，越有可能降低重复字词",
     },
     Plugin: {
@@ -324,8 +324,8 @@ const cn = {
     },
   },
   Store: {
-    DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    DefaultTopic: "New Chat",
+    BotHello: "# 天工智能AI_多功能版\n功能:插件、绘画、GPT3.5、GPT4、GPT4识图版、必应、联网问答\n**模型对照表：[立即查看](http://rr.yjie.fun/a/)**\n\n可使用状态：🟢\n**使用资格开通：[立即前往开通](http://bj.yjie.fun/dy/)**\n\n> LobeChat📦(与本产品授权码通用)： [立即访问](https://2.aidou.asia/)\n产品介绍:现代主题，精致的界面设计，具备网页爬取、插件、联网、图表生成，以及提高效率的功能。\n\n> 客服微信：Yueyi_Wife\n\n**模型可用状态查询：[立即查看](http://bj.yjie.fun/zt/)**",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
@@ -353,8 +353,8 @@ const cn = {
   Plugin: {
     Name: "插件",
     Page: {
-      Title: "预设插件",
-      SubTitle: (count: number) => `${count} 个预设插件`,
+      Title: "全部插件",
+      SubTitle: (count: number) => `${count} 个插件`,
       Search: "搜索插件",
       Create: "新建",
     },
@@ -366,7 +366,7 @@ const cn = {
     },
     EditModal: {
       Title: (readonly: boolean) =>
-        `编辑预设插件 ${readonly ? "（只读）" : ""}`,
+        `编辑插件 ${readonly ? "（只读）" : ""}`,
       Download: "下载预设",
       Clone: "克隆预设",
     },
@@ -375,11 +375,11 @@ const cn = {
     Sysmessage: "你是一个助手",
   },
   Mask: {
-    Name: "面具",
+    Name: "APP Store",
     Page: {
-      Title: "预设角色面具",
-      SubTitle: (count: number) => `${count} 个预设角色定义`,
-      Search: "搜索角色面具",
+      Title: "预设GPT应用",
+      SubTitle: (count: number) => `${count} 个ChatGPT应用`,
+      Search: "搜索GPT应用",
       Create: "新建",
     },
     Item: {
@@ -392,13 +392,13 @@ const cn = {
     },
     EditModal: {
       Title: (readonly: boolean) =>
-        `编辑预设面具 ${readonly ? "（只读）" : ""}`,
-      Download: "下载预设",
-      Clone: "克隆预设",
+        `编辑预设应用 ${readonly ? "（只读）" : ""}`,
+      Download: "下载应用",
+      Clone: "克隆应用",
     },
     Config: {
-      Avatar: "角色头像",
-      Name: "角色名称",
+      Avatar: "应用头像",
+      Name: "应用名称",
       Sync: {
         Title: "使用全局设置",
         SubTitle: "当前对话是否使用全局模型设置",
@@ -409,8 +409,8 @@ const cn = {
         SubTitle: "隐藏后预设对话不会出现在聊天界面",
       },
       Share: {
-        Title: "分享此面具",
-        SubTitle: "生成此面具的直达链接",
+        Title: "分享此应用",
+        SubTitle: "生成此应用的直达链接",
         Action: "复制链接",
       },
     },
@@ -420,8 +420,8 @@ const cn = {
     Skip: "直接开始",
     NotShow: "不再展示",
     ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
-    Title: "挑选一个面具",
-    SubTitle: "现在开始，与面具背后的灵魂思维碰撞",
+    Title: "海量的ChatGPT应用",
+    SubTitle: "或在几秒钟内创建属于自己的应用",
     More: "查看全部",
   },
 
