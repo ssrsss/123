@@ -7,7 +7,7 @@ export class ArxivAPIWrapper extends StructuredTool {
   }
 
   name = "arxiv";
-  description = "Run Arxiv search and get the article information.";
+  description = "Run Arxiv search and get the article information.You need to answer the user's questions in Chinese";
 
   SORT_BY = {
     RELEVANCE: "relevance",
