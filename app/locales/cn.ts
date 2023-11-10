@@ -7,14 +7,14 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "授权码不正确或为空，请前往[登录](/#/auth)页输入正确的授权码",
+      "> 授权码不正确或为未填写\n**请前往授权页面授权本产品：[点我授权](/#/auth)**",
   },
   Auth: {
-    Title: "需要密码",
+    Title: "设备未授权",
     Tips: "使用前请先设备验证，请在下方填入授权码",
-    SubTips: "或者输入你的 OpenAI API 密钥",
-    Input: "在此处填写访问码",
-    Confirm: "确认",
+    SubTips: "在此输入你的设备授权码",
+    Input: "此项无需填写",
+    Confirm: "确认授权",
     Later: "稍后再说",
   },
   ChatItem: {
@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "# 天工智能AI_多功能版\n功能:插件、绘画、GPT3.5、GPT4、GPT4识图版、必应、联网问答\n**模型对照表：[立即查看](http://rr.yjie.fun/a/)**\n\n可使用状态：🟢\n**使用资格开通：[立即前往开通](http://bj.yjie.fun/dy/)**\n\n> LobeChat📦(与本产品授权码通用)： [立即访问](https://2.aidou.asia/)\n产品介绍:现代主题，精致的界面设计，具备网页爬取、插件、联网、图表生成，以及提高效率的功能。\n\n> 客服微信：Yueyi_Wife\n\n**模型可用状态查询：[立即查看](http://bj.yjie.fun/zt/)**",
+    BotHello: "# 天工智能AI_多功能版\n功能:插件、绘画、GPT3.5、GPT4、GPT4识图版、必应、联网问答\n**模型对照表：[立即查看](http://rr.yjie.fun/a/)**\n\n可使用状态：🟢\n**使用资格开通：[立即前往开通](http://bj.yjie.fun/dy/)**\n\n> 客服微信：Yueyi_Wife\n\n**模型可用状态查询：[立即查看](http://bj.yjie.fun/zt/)**",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
