@@ -43,7 +43,7 @@ const cn = {
       Edit: "编辑",
     },
     Commands: {
-      new: "新建聊天",
+      new: "New Chat",
       newm: "从应用新建聊天",
       next: "下一个聊天",
       prev: "上一个聊天",
@@ -120,7 +120,7 @@ const cn = {
     ResetConfirm: "确认清空历史摘要？",
   },
   Home: {
-    NewChat: "新的聊天",
+    NewChat: "New Chat",
     DeleteChat: "确认删除选中的对话？",
     DeleteToast: "已删除会话",
     Revert: "撤销",
@@ -347,8 +347,8 @@ const cn = {
     Toast: (x: any) => `包含 ${x} 条预设提示词`,
     Edit: "当前对话设置",
     Add: "新增一条对话",
-    Clear: "上下文已清除",
-    Revert: "恢复上下文",
+    Clear: "对话记录已清除",
+    Revert: "恢复对话记录",
   },
   Plugin: {
     Name: "插件",
