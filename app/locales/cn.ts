@@ -181,8 +181,8 @@ const cn = {
       SubTitle: "根据对话内容生成合适的标题",
     },
     Sync: {
-      CloudState: "云端数据",
-      NotSyncYet: "还没有进行过同步",
+      CloudState: "云端聊天数据",
+      NotSyncYet: "此功能非专业无需改动",
       Success: "同步成功",
       Fail: "同步失败",
 
@@ -217,9 +217,9 @@ const cn = {
         },
       },
 
-      LocalState: "本地数据",
+      LocalState: "本地聊天数据",
       Overview: (overview: any) => {
-        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个面具`;
+        return `${overview.chat} 次对话，${overview.message} 条消息，${overview.prompt} 条提示词，${overview.mask} 个应用`;
       },
       ImportFailed: "导入失败",
     },
@@ -436,8 +436,8 @@ const cn = {
     Close: "关闭",
     Create: "新建",
     Edit: "编辑",
-    Export: "导出",
-    Import: "导入",
+    Export: "全部聊天备份",
+    Import: "聊天备份导入",
     Sync: "同步",
     Config: "配置",
   },
