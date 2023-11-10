@@ -65,6 +65,7 @@ export class HttpGetTool extends Tool implements RequestTool {
     return response;
   }
 
-  description = `A portal to the internet. Use this when you need to get specific content from a website.
-  Input should be a url string (i.e. "https://www.google.com"). The output will be the text response of the GET request.You need to answer the user's questions in Chinese`;
+  description = `When you need to send a message to a user, you must reply to the user in Chinese.
+  A portal to the internet. Use this when you need to get specific content from a website.
+  Input should be a url string (i.e. "https://www.google.com"). The output will be the text response of the GET request.`;
 }
