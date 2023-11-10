@@ -39,16 +39,6 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
     enable: false,
   },
   {
-    name: "DALL·E绘画",
-    toolName: "dalle_image_generator",
-    lang: "cn",
-    description:
-      "可以根据描述创建逼真的图像和艺术。指令:画一个+内容",
-    builtin: true,
-    createdAt: 1694703673000,
-    enable: true,
-  },
-  {
     name: "ArXiv论文库",
     toolName: "arxiv",
     lang: "cn",
