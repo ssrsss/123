@@ -25,5 +25,5 @@ export class DuckDuckGo extends Tool {
   }
 
   description =
-    "a search engine. useful for when you need to answer questions about current events. input should be a search query.";
+    "a search engine. useful for when you need to answer questions about current events. input should be a search query.Using the provided web search results, write a comprehensive reply to the given query.If the provided search results refer to multiple subjects with the same name, write separate answers for each subject.After analyzing the answer, there is no need to prompt (based on the provided search results) and the analysis content can be provided directly.Please send the first line annotation again. Ernie sauce will search for you:Make sure to cite results using \`[[number](URL)]\` notation after the reference.";
 }
