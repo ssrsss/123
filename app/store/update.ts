@@ -104,7 +104,7 @@ export const useUpdateStore = createPersistStore(
                     const updateMessage = Locale.Settings.Update.FoundUpdate(`${remoteId}`);
                     // Show a notification for the new version using Tauri
                     window.__TAURI__?.notification.sendNotification({
-                      title: "ChatGPT Next Web",
+                      title: "天工智能AI",
                       body: updateMessage,
                       icon: `${ChatGptIcon.src}`,
                       sound: "Default"
