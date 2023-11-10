@@ -6,19 +6,19 @@
   ],
   [
       "一键翻译",
-      "Please translate into Chinese and send to me in Chinese"
+      "Please translate the last content you gave me (just translate it directly, without too much explanation)"
   ],
     [
       "一键总结",
-      "Please summarize this sentence.using Chinese"
+      "Please summarize this sentence"
   ],
    [
       "文章一键精简",
-      "Shorten it！using Chinese"
+      "Shorten it！"
   ],
    [
       "文章一键扩写",
-      "Expand it！using Chinese"
+      "Expand it！"
   ],
     [
       "文章一键润色",
