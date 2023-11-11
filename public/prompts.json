@@ -1,16 +1,16 @@
 {
   "cn": [
-    [
-      "字数未达到要求，立即一键续写",
-      "Please continue to supplement the content you replied to above. There is no need to start from scratch, just continue to supplement the content at the end, in Chinese"
-  ],
   [
-      "一键翻译(英文￫中文)",
+      "一键翻译(英文🔄中文)",
       "Please translate into Chinese and send to me in Chinese"
   ],
   [
-      "一键翻译(中文￫英文)",
+      "一键翻译(中文🔄英文)",
       "Please translate it into English (under the premise of adhering to the original meaning, make the content easier to understand, conform to Chinese expression habits, and have a style and language logic similar to that of Americans), and send it to me in English."
+  ],
+    [
+      "字数未达到要求，立即一键续写",
+      "Please continue to supplement the content you replied to above. There is no need to start from scratch, just continue to supplement the content at the end, in Chinese"
   ],
     [
       "一键总结",
