@@ -88,7 +88,7 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
-    name: "必应",
+    name: "bing",
     available: true,
   },
   {
@@ -108,7 +108,7 @@ export const DEFAULT_MODELS = [
     available: true,
   },
   {
-    name: "测试",
+    name: "gpt-3.5-turbo",
     available: true,
   },
   {
