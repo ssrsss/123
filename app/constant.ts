@@ -114,7 +114,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "gpt-3.5-turbo",
-    value: "gpt-3.5-turbo-16k",
+    value: "gpt-3.5-turbo",
     available: true,
   },
   {
