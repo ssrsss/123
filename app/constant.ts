@@ -94,7 +94,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "dall-e3",
-    value: "gpt-3.5-turbo-16k",
+    value: "dall-e3",
     available: true,
   },
   {
@@ -104,12 +104,12 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "gpt-4-all",
-    value: "gpt-3.5-turbo-16k",
+    value: "gpt-4-all",
     available: true,
   },
   {
     name: "gpt-4v",
-    value: "gpt-3.5-turbo-16k",
+    value: "gpt-4v",
     available: true,
   },
   {
