@@ -2,31 +2,6 @@ import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
 {
-    avatar: "1f4c6",
-    name: "图表绘制助手",
-    context: [
-      {
-          id: "text-to-pic-0",
-        role: "system",
-        content:
-          "当然，我可以帮您生成**流程图、表格、时序图、树形图、甘特图、网络图**。请提供以下具体信息，以便我可以开始绘图：\n\n1. 流程的起始点和结束点是什么？\n2. 流程中的步骤或活动是什么？请按顺序提供它们的名称。\n3. 每个步骤之间的关系是什么？例如，是顺序执行还是有条件的分支？\n4. 是否有任何决策点或判断条件？如果有，请提供相关信息。\n5. 是否有任何循环或循环体？如果有，请提供相关信息，如果没有请直接给出要求，我将为您生成。\n\n**提供这些信息后，我将生成流程图，并以Markdown形式展示给您。**",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-3.5-turbo-16k",
-      temperature: 1,
-      max_tokens: 15000,
-      presence_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480537,
-  },
-{
     avatar: "1f64c",
     name: "手相大师",
     context: [
