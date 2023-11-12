@@ -39,9 +39,6 @@
   --border-in-light: 1px solid rgb(222, 222, 222);
 
   --theme-color: var(--gray);
-
-  div:not(.no-dark) > svg {
-    filter: invert(0);
   }
 }
 
