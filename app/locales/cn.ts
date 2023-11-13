@@ -7,7 +7,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "# 天工智能AI_多功能版\n**功能**:插件、绘画、GPT3.5、GPT4、GPT4识图版、必应、联网问答、文档对话。\n\n**模型对照表：[立即查看](http://rr.yjie.fun/a/)**\n**使用资格开通：[立即前往开通](http://bj.yjie.fun/dy/)**\n**模型可用状态查询：[立即查看](http://bj.yjie.fun/zt/)**\n**地址发布页：[立即查看](http://rr.yjie.fun/fb/)**\n**旧版本(豆包AI)：[立即切换](https://3.aidou.asia/)**\n\n> 授权码不正确或为未填写时\n**请前往授权页面授权本产品：[点我授权](/#/auth)**\n\n> 客服微信：Yueyi_Wife\n\n**豆包AI(旧版本)试用版：[立即前往](https://4.aidou.asia/)**",
+      "# 天工智能AI_多功能版\n**功能**:插件、绘画、GPT3.5、GPT4、GPT4识图版、必应、联网问答、文档对话。\n\n**模型对照表：[立即查看](http://rr.yjie.fun/a/)**\n**使用资格开通：[立即前往开通](http://bj.yjie.fun/dy/)**\n**模型可用状态查询：[立即查看](http://bj.yjie.fun/zt/)**\n**地址发布页：[立即查看](http://rr.yjie.fun/fb/)**\n**旧版本(豆包AI)：[立即切换](https://3.aidou.asia/)**\n\n> 授权码不正确或为未填写时\n**请前往授权页面授权本产品：[点我授权](/#/auth)**\n\n> 客服微信：Yueyi_Wife",
   },
   Auth: {
     Title: "设备未授权",
@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "# 天工智能AI_多功能版\n**功能**:插件、绘画、GPT3.5、GPT4、GPT4识图版、必应、联网问答、文档对话。\n\n**模型对照表：[立即查看](http://rr.yjie.fun/a/)**\n**使用资格开通：[立即前往开通](http://bj.yjie.fun/dy/)**\n**模型可用状态查询：[立即查看](http://bj.yjie.fun/zt/)**\n**地址发布页：[立即查看](http://rr.yjie.fun/fb/)**\n**旧版本(豆包AI)：[立即切换](https://3.aidou.asia/)**\n\n> 授权码不正确或为未填写时\n**请前往授权页面授权本产品：[点我授权](/#/auth)**\n\n> 客服微信：Yueyi_Wife\n\n**豆包AI(旧版本)试用版：[立即前往](https://4.aidou.asia/)**",
+    BotHello: "# 天工智能AI_多功能版\n**功能**:插件、绘画、GPT3.5、GPT4、GPT4识图版、必应、联网问答、文档对话。\n\n**模型对照表：[立即查看](http://rr.yjie.fun/a/)**\n**使用资格开通：[立即前往开通](http://bj.yjie.fun/dy/)**\n**模型可用状态查询：[立即查看](http://bj.yjie.fun/zt/)**\n**地址发布页：[立即查看](http://rr.yjie.fun/fb/)**\n**旧版本(豆包AI)：[立即切换](https://3.aidou.asia/)**\n\n> 授权码不正确或为未填写时\n**请前往授权页面授权本产品：[点我授权](/#/auth)**\n\n> 客服微信：Yueyi_Wife",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
