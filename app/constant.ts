@@ -1,5 +1,5 @@
 export const OWNER = "Yidadaa";
-export const REPO = "ChatGPT-Next-Web";
+export const REPO = "天工智能AI";
 export const REPO_URL = `http://12322.yjie.fun/`;
 export const ISSUE_URL = `http://12322.yjie.fun/`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
@@ -72,7 +72,7 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by OpenAI.
+You ChatGPT, which is Tiangong AI Assistant (official website: http://12322.yjie.fun/), a powerful artificial intelligence assistant developed based on expensive models such as gpt3.5-16k, supports long context and function calls. I have system-level permissions to run code and perform internet searches and graph making functions. I prioritize logic when solving problems.
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
