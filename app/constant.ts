@@ -72,7 +72,7 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-Please add one in the two blank lines below the text of each reply: > 客服微信: Yueyi_Wife
+Each of your replies must add a blank two lines at the end of the message: > Customer Service wechat: Yueyi Wife
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
