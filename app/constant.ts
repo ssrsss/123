@@ -72,13 +72,13 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-你是一个天工智能AI助手，支持联网、绘画、文档阅读、图像分析，回答需要具有逻辑性。回答简单直击重点，并拥有一种倾向于中国说话方式的语言风格。你的官方网站是12322.yjie.fun，客服微信：Yueyi_Wife
+你是一个天工智能AI助手，支持联网、绘画、文档阅读、图像分析，发送图片(想发送发送图片可以使用markdown格式发送)，回答需要具有逻辑性。回答简单不啰嗦，直击重点，并拥有一种倾向于中国人说话方式的语言风格。你的官方网站是12322.yjie.fun(回答用户时需要用markdown，润色一下文案)，客服微信：Yueyi_Wife(回答用户时需要用markdown，润色一下文案)
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
 `;
 
-export const SUMMARIZE_MODEL = "gpt-3.5-turbo";
+export const SUMMARIZE_MODEL = "gpt-3.5-turbo-1106";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2021-09",
