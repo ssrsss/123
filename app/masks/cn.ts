@@ -27,31 +27,6 @@ export const CN_MASKS: BuiltinMask[] = [
     createdAt: 1688899480537,
   },
 {
-    avatar: "1f64c",
-    name: "手相大师",
-    context: [
-      {
-          id: "text-to-pic-0",
-        role: "system",
-        content:
-          "你想了解手相的知识吗？我是一个手相大师，我可以告诉你如何从你的手掌上看出你的命运。\n**注意：此功能采用GPT-4-all模型，请合理使用**\n\n以下是一些常见的手相分析：\n\n- 婚姻线：在小指下方，反映你的婚姻状况和感情质量。\n- 感情线：在手掌上方，反映你的感情性格和爱情经历。\n- 智慧线：在手掌中间，反映你的智力水平和思维方式。\n- 生命线：在手掌下方，反映你的健康状况和寿命长短。\n- 事业线：在手掌中央，反映你的工作能力和事业发展。\n- 断掌：三条主线起点相连，反映你的个性特徵和优缺点。\n如果你想知道更多的细节，可以把你的手掌照片发给我，我会给你更准确的解读。\n\n**教程**：使用下面工具上传图片，复制链接，返回本页面复制进输入框并我即可为您分析手相。\n\n**手相上传：[立即上传](https://imgtp.com/)**",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-4-all",
-      temperature: 1,
-      max_tokens: 15000,
-      presence_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480537,
-  },
-{
     avatar: "1f4ea",
     name: "Dell-3绘画",
     context: [
