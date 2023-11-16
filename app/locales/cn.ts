@@ -7,7 +7,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "# 天工智能AI_多功能版\n|列表         | 地址                                  |\n|--------------|---------------------------------------|\n| 插件         | 插件、绘画、GPT3.5、GPT4、GPT-Plus、绘画、识图、文档对话                                    |\n| 使用资格开通 | [立即前往开通](http://bj.yjie.fun/dy/) |\n| 模型可用状态查询 | [立即查看](http://bj.yjie.fun/zt/)      |\n| 地址发布页   | [立即查看](http://rr.yjie.fun/fb/)      |\n| 旧版本(豆包AI) | [立即切换](https://3.aidou.asia/)       |\n| 授权页面     | [点我授权](/#/auth)                    |\n| 客服微信     | Yueyi_Wife                            |\n| **温馨提示**     | gpt-3.5-turbo-1106模型费用更低,速度较快,推荐使用                            |",
+      "# 天工智能AI_多功能版\n|列表         | 地址                                  |\n|--------------|---------------------------------------|\n| 插件         | 插件、绘画、GPT3.5、GPT4、GPT-Plus、绘画、识图、文档对话                                    |\n| 使用资格开通 | [立即前往开通](http://bj.yjie.fun/dy/) |\n| 模型可用状态查询 | [立即查看](http://bj.yjie.fun/zt/)      |\n| 模型对照表 | [立即查看](http://rr.yjie.fun/a/)      |\n| 地址发布页   | [立即查看](http://rr.yjie.fun/fb/)      |\n| 旧版本(豆包AI) | [立即切换](https://3.aidou.asia/)       |\n| 授权页面     | [点我授权](/#/auth)                    |\n| 客服微信     | Yueyi_Wife                            |\n| **温馨提示**     | gpt-3.5-turbo-1106模型费用更低,速度较快,推荐使用                            |",
   },
   Auth: {
     Title: "设备未授权",
@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "# 天工智能AI_多功能版\n|列表         | 地址                                  |\n|--------------|---------------------------------------|\n| 插件         | 插件、绘画、GPT3.5、GPT4、GPT-Plus、绘画、识图、文档对话                                    |\n| 使用资格开通 | [立即前往开通](http://bj.yjie.fun/dy/) |\n| 模型可用状态查询 | [立即查看](http://bj.yjie.fun/zt/)      |\n| 地址发布页   | [立即查看](http://rr.yjie.fun/fb/)      |\n| 旧版本(豆包AI) | [立即切换](https://3.aidou.asia/)       |\n| 授权页面     | [点我授权](/#/auth)                    |\n| 客服微信     | Yueyi_Wife                            |\n| **温馨提示**     | gpt-3.5-turbo-1106模型费用更低,速度较快,推荐使用                            |",
+    BotHello: "# 天工智能AI_多功能版\n|列表         | 地址                                  |\n|--------------|---------------------------------------|\n| 插件         | 插件、绘画、GPT3.5、GPT4、GPT-Plus、绘画、识图、文档对话                                    |\n| 使用资格开通 | [立即前往开通](http://bj.yjie.fun/dy/) |\n| 模型可用状态查询 | [立即查看](http://bj.yjie.fun/zt/)      |\n| 模型对照表 | [立即查看](http://rr.yjie.fun/a/)      |\n| 地址发布页   | [立即查看](http://rr.yjie.fun/fb/)      |\n| 旧版本(豆包AI) | [立即切换](https://3.aidou.asia/)       |\n| 授权页面     | [点我授权](/#/auth)                    |\n| 客服微信     | Yueyi_Wife                            |\n| **温馨提示**     | gpt-3.5-turbo-1106模型费用更低,速度较快,推荐使用                            |",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
