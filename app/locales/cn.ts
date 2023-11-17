@@ -66,7 +66,7 @@ const cn = {
       DisablePlugins: "插件状态:开启",
     },
     Rename: "重命名对话",
-    Typing: "正在输入…",
+    Typing: "对方正在输入…",
     Input: (submitKey: string) => {
       var inputHints = `${submitKey} 发送`;
       if (submitKey === String(SubmitKey.Enter)) {
