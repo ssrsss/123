@@ -123,10 +123,6 @@ export const DEFAULT_MODELS = [
     name: "gpt-4-1106-preview",
     available: true,
   },
-  {
-    name: "gpt-4-vision-preview",
-    available: true,
-  },
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
