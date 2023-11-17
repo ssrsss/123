@@ -27,7 +27,7 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
       "可以从网页中提取信息或总结其内容。指令:网址+要求",
     builtin: true,
     createdAt: 1693744292000,
-    enable: true,
+    enable: false,
   },
   {
     name: "维基百科",
