@@ -1,7 +1,7 @@
 export const OWNER = "Yidadaa";
 export const REPO = "天工智能AI";
-export const REPO_URL = `http://12322.yjie.fun/`;
-export const GO_URL = `/#/auth`;
+export const REPO_URL = `/#/auth`;
+export const GO_URL = `http://12322.yjie.fun/`;
 export const ISSUE_URL = `http://12322.yjie.fun/`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const RELEASE_URL = `${REPO_URL}/releases`;
