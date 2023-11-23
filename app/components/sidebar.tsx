@@ -189,6 +189,15 @@ export function SideBar(props: { className?: string }) {
           shadow
         />
       </div>
+      <div className={styles["sidebar-header-bar"]}>
+  <IconButton
+    icon={<PluginIcon />}
+    text="授权产品"
+    className={styles["sidebar-bar-button"]}
+    onClick={() => navigate(Path.Auth, { state: { fromHome: true } })}
+    shadow
+  />
+</div>
 
       <div
         className={styles["sidebar-body"]}
