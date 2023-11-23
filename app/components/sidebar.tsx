@@ -8,6 +8,7 @@ import JihuoIcon from "../icons/jihuo.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
+import QuanIcon from "../icons/quan.svg";
 import CloseIcon from "../icons/close.svg";
 import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -191,7 +192,7 @@ export function SideBar(props: { className?: string }) {
       </div>
       <div className={styles["sidebar-header-bar"]}>
   <IconButton
-    icon={<PluginIcon />}
+    icon={<QuaninIcon />}
     text="授权产品"
     className={styles["sidebar-bar-button"]}
     onClick={() => navigate(Path.Auth, { state: { fromHome: true } })}
