@@ -151,9 +151,12 @@
   animation: slide-in ease 0.3s;
 }
 
-.sidebar-sub-title {
-  font-size: 12px;
-  font-weight: 400;
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #d16161, #87a2eb, #878ceb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: slide-in ease 0.3s;
 }
 
