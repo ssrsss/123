@@ -157,6 +157,14 @@
   animation: slide-in ease 0.3s;
 }
 
+.sidebar-beian-title {
+  font-size: 12px;
+  font-weight: 400;
+  animation: slide-in ease 0.3s;
+  text-align: center;
+  color: gray;
+}
+
 .sidebar-body {
   flex: 1;
   overflow: auto;
