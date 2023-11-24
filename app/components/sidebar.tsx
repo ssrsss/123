@@ -262,6 +262,9 @@ export function SideBar(props: { className?: string }) {
       >
         <DragIcon />
       </div>
+      <div className={styles["sidebar-beian-title"]}>
+          <br></br>皖ICP备2023001879号
+        </div>
     </div>
   );
 }
