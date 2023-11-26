@@ -89,11 +89,19 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
+    name: "claude-1.3-100k",
+    available: true,
+  },
+    {
+    name: "claude-instant-1",
+    available: true,
+  },
+  {
     name: "bing",
     available: true,
   },
   {
-    name: "dall-e3",
+    name: "dall-e-3",
     available: true,
   },
   {
@@ -102,10 +110,6 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "gpt-4-all",
-    available: true,
-  },
-  {
-    name: "gpt-4v",
     available: true,
   },
   {
@@ -122,6 +126,22 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "gpt-4-1106-preview",
+    available: true,
+  },
+    {
+    name: "stable-diffusion",
+    available: true,
+  },
+  {
+    name: "google-palm",
+    available: true,
+  },
+   {
+    name: "llama-2-70b",
+    available: true,
+  },
+  {
+    name: "code-llama-13b",
     available: true,
   },
 ] as const;
