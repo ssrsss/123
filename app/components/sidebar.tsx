@@ -9,6 +9,7 @@ import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import QuaninIcon from "../icons/quan.svg";
+import GeninIcon from "../icons/gen.svg";
 import CloseIcon from "../icons/close.svg";
 import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -56,7 +57,9 @@ function useHotKey() {
     return () => window.removeEventListener("keydown", onKeyDown);
   });
 }
-
+function goBaidu() {
+  window.location.href = 'http://bj.yjie.fun/abc/';
+}
 function useDragSideBar() {
   const limit = (x: number) => Math.min(MAX_SIDEBAR_WIDTH, x);
 
@@ -191,14 +194,24 @@ export function SideBar(props: { className?: string }) {
         />
       </div>
       <div className={styles["sidebar-header-bar"]}>
-  <IconButton
-    icon={<QuaninIcon />}
-    text="授权产品"
-    className={styles["sidebar-bar-button"]}
-    onClick={() => navigate(Path.Auth, { state: { fromHome: true } })}
-    shadow
-  />
-</div>
+       <IconButton
+         icon={<QuaninIcon />}
+         text="授权产品"
+         className={styles["sidebar-bar-button"]}
+         onClick={() => navigate(Path.Auth, { state: { fromHome: true } })}
+         shadow
+      />
+      </div>
+      <div className={styles["sidebar-header-bar"]}>
+       <IconButton
+         icon={<GeninIcon />}
+         text="查看更多"
+         className={styles["sidebar-bar-button"]}
+         onClick={goBaidu}
+         shadow
+      />
+      </div>
+
 
       <div
         className={styles["sidebar-body"]}
@@ -264,7 +277,7 @@ export function SideBar(props: { className?: string }) {
       </div>
       <br></br><div className={styles["sidebar-beian-title"]} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <img src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png" alt="Your Image" style={{ width: '14px', height: '14px', marginRight: '5px' }} />
-          皖ICP备20230901692号
+          皖ICP备2023001879号
       </div>
     </div>
   );
