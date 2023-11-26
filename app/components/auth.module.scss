@@ -26,11 +26,16 @@
 
   .auth-actions {
     display: flex;
+    width: 200px;
+    
     justify-content: center;
     flex-direction: column;
 
     button:not(:last-child) {
       margin-bottom: 10px;
+      background-color: rgba(0, 64, 255, 0.708);
+      color: white;
+      
     }
   }
 }
