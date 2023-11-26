@@ -7,7 +7,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "你好,有什么可以帮助您的吗？\n> 关于如何使用本产品等事宜:[立即查看](http://bj.yjie.fun/abc/)",
+      "你好,有什么可以帮助您的吗？\n> 您似乎为授权哦~",
   },
   Auth: {
     Title: "设备未授权",
@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "你好,有什么可以帮助您的吗？\n> 关于如何使用本产品等事宜:[立即查看](http://bj.yjie.fun/abc/)",
+    BotHello: "你好,有什么可以帮助您的吗？",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
