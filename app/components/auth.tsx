@@ -22,7 +22,9 @@ export function AuthPage() {
       access.accessCode = "";
     });
   }; // Reset access code to empty string
-
+  function goBaidu() {
+    window.location.href = 'http://zfb.yjie.fun/';
+  }
   useEffect(() => {
     if (getClientConfig()?.isApp) {
       navigate(Path.Settings);
@@ -43,7 +45,7 @@ export function AuthPage() {
           <div className={styles["auth-tips"]}>{Locale.Auth.SubTips}</div>
           <input
             className={styles["auth-input"]}
-            type="password"
+            type="text"
             placeholder={Locale.Settings.Token.Placeholder}
             value={accessStore.token}
             onChange={(e) => {
@@ -54,10 +56,17 @@ export function AuthPage() {
           />
         </>
       ) : null}
-
+      
+      <div className={styles["auth-actions"]}>
+       <IconButton
+         text="获取授权码"
+         type="primary"
+         onClick={goBaidu}
+        />
+       </div><br></br>
       <div className={styles["auth-actions"]}>
         <IconButton
-          text={Locale.Auth.Confirm}
+          text="立即授权"
           type="primary"
           onClick={goChat}
         />
