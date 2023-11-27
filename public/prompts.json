@@ -14,7 +14,7 @@
   ],
     [
       "一键总结",
-      "Please summarize this sentence.using Chinese"
+      "Please summarize it in about [这里填写需要总结多少字数] words and answer in Chinese."
   ],
    [
       "文章一键精简",
