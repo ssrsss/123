@@ -117,6 +117,10 @@ export const DEFAULT_MODELS = [
     available: true,
   },
   {
+    name: "gpt-4-dalle",
+    available: true,
+  },
+  {
     name: "gpt-3.5-turbo",
     available: true,
   },
