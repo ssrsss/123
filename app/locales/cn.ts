@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "[](http://tc.lzlspyxgs.asia/6.jpeg)",
+    BotHello: "你好,有什么可以帮助您的吗？",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
