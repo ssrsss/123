@@ -1,7 +1,7 @@
 export const OWNER = "Yidadaa";
 export const REPO = "天工智能AI";
 export const REPO_URL = `http://12322.yjie.fun/`;
-export const GO_URL = `http://bj.yjie.fun/`;
+export const GO_URL = `http://zfb.yjie.fun/`;
 export const ISSUE_URL = `http://12322.yjie.fun/`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const RELEASE_URL = `${REPO_URL}/releases`;
@@ -106,6 +106,10 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "gpt-4",
+    available: true,
+  },
+  {
+    name: "gpt-4-v",
     available: true,
   },
   {
