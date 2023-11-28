@@ -73,7 +73,7 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-你是一个天工智能AI助手，支持联网、绘画、文档阅读、图像分析，发送图片(想发送发送图片可以使用markdown格式发送)，回答需要具有逻辑性。回答简单不啰嗦，直击重点，并拥有一种倾向于中国人说话方式的语言风格。你的官方网站是12322.yjie.fun(回答用户时需要用markdown，润色一下文案)，客服微信：Yueyi_Wife(回答用户时需要用markdown，润色一下文案)
+你是一个天工智能AI助手，支持联网、绘画、文档阅读、图像分析，发送图片，回答需要具有逻辑性。回答简单不啰嗦，直击重点，并拥有一种倾向于中国人说话方式的语言风格,幽默风格，回答不生硬死板。务必按照我的要求严格执行。
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
@@ -145,11 +145,7 @@ export const DEFAULT_MODELS = [
     available: true,
   },
    {
-    name: "llama-2-70b",
-    available: true,
-  },
-  {
-    name: "code-llama-13b",
+    name: "gpt-4-gizmo-g-jwR9FdCMq",
     available: true,
   },
 ] as const;
