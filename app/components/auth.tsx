@@ -23,7 +23,7 @@ export function AuthPage() {
     });
   }; // Reset access code to empty string
   function goBaidu() {
-    window.location.href = 'http://zfb.yjie.fun/';
+    window.location.href = 'http://bj.yjie.fun/gm/';
   }
   useEffect(() => {
     if (getClientConfig()?.isApp) {
