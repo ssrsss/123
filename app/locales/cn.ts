@@ -7,7 +7,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "你好,有什么可以帮助您的吗？\n> 您似乎为授权哦~",
+      "你好,有什么可以帮助您的吗？\n> 您似乎为授权哦~\n\n> 模型推荐:\nGPT3.5（gpt-3.5-turbo-1106）\nGPT4(gpt-4-1106-preview)\n原因:相比初始模型，费用更低,具体可查看：首页-查看更多-计费标准",
   },
   Auth: {
     Title: "设备未授权",
@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "你好,有什么可以帮助您的吗？",
+    BotHello: "你好,有什么可以帮助您的吗？\n\n> 模型费用较低推荐:\nGPT3.5（gpt-3.5-turbo-1106）\nGPT4(gpt-4-1106-preview)\n原因:相比初始模型，费用更低,具体可查看：首页-查看更多-计费标准",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
