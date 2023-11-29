@@ -8,6 +8,7 @@ import JihuoIcon from "../icons/jihuo.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
+import TitiIcon from "../icons/ti.svg";
 import QuaninIcon from "../icons/quan.svg";
 import GeninIcon from "../icons/gen.svg";
 import CloseIcon from "../icons/close.svg";
@@ -253,7 +254,7 @@ export function SideBar(props: { className?: string }) {
           </div>
           <div className={styles["sidebar-action"]}>
             <a href={GO_URL} target="_blank" rel="noopener noreferrer">
-              <IconButton icon={<JihuoIcon />} shadow />
+              <IconButton icon={<TitiIcon />} shadow />
             </a>
           </div>
           <div className={styles["sidebar-action"]}>
