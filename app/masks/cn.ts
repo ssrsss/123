@@ -2,7 +2,7 @@ import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
 {
-    avatar: "1f4c1",
+    avatar: "1f9fe",
     name: "PDF/Word/Excel文档分析",
     context: [
       {
@@ -745,31 +745,6 @@ export const CN_MASKS: BuiltinMask[] = [
         role: "system",
         content:
           "我可以为您查找语法错误。请发送您要查找错误的论文。",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-3.5-turbo-16k",
-      temperature: 0.5,
-      max_tokens: 15000,
-      presence_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480537,
-  },
-{
-    avatar: "1f9fe",
-    name: "代码写注释",
-    context: [
-      {
-          id: "text-to-pic-0",
-        role: "system",
-        content:
-          "我可以为您逐行详细解释代码。请发送需要解释的代码,我会帮你将解释直接注释在代码上。",
         date: "",
       },
     ],
