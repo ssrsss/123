@@ -60,6 +60,9 @@ function useHotKey() {
 function goBaidu() {
   window.location.href = 'http://bj.yjie.fun/abc/';
 }
+function goShang() {
+  window.location.href = 'https://zfb.yjie.fun/zl/';
+}
 function useDragSideBar() {
   const limit = (x: number) => Math.min(MAX_SIDEBAR_WIDTH, x);
 
@@ -199,6 +202,13 @@ export function SideBar(props: { className?: string }) {
          text="授权产品"
          className={styles["sidebar-bar-button"]}
          onClick={() => navigate(Path.Auth, { state: { fromHome: true } })}
+         shadow
+      />
+        <IconButton
+         icon={<JihuoIcon />}
+         text="文档上传"
+         className={styles["sidebar-bar-button"]}
+         onClick={goShang}
          shadow
       />
       </div>
