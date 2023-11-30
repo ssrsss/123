@@ -21,7 +21,7 @@ export const CN_MASKS: BuiltinMask[] = [
       sendMemory: true,
       historyMessageCount: 4,
       compressMessageLengthThreshold: 1000,
-      enableInjectSystemPrompts: true,
+      enableInjectSystemPrompts: false,
     },
     lang: "cn",
     builtin: true,
