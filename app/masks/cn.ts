@@ -2,6 +2,81 @@ import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
 {
+    avatar: "1f95a",
+    name: "商城数据分析No1",
+    context: [
+      {
+        id: "text-to-pic-0",
+        role: "system",
+        content:
+          "例如：\n\nAPP名称\t展现量\t点击量\t下载量\t安装量\t激活量\n毛戈平MAOGEPING商城\t173274\t92109\t8610\t1780\t67\n丝芙兰商城\t197539\t22111\t15912\t4523\t456\n兰蔻商城\t245111\t27291\t13003\t7127\t234\n\n点击率=点击量/展现量\n下载率=下载量/点击量\n安装率=安装量/下载量\n激活率=激活量/安装量\n\n请计算四个率",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo-16k",
+      temperature: 0.5,
+      max_tokens: 15000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+      createdAt: 1688899480537,
+  },
+    {
+    avatar: "1f95a",
+    name: "商城数据分析No2",
+    context: [
+      {
+        id: "text-to-pic-0",
+        role: "system",
+        content:
+          "例如:门店名称\t展现量\t点击量\t到客量\t成交量\n毛戈平MAOGEPING官方旗舰店\t87126\t47589\t1139\t452\n丝芙兰官方旗舰店\t21600\t10315\t4982\t1231\n兰蔻官方旗舰店\t117965\t31118\t9910\t2111\n\n点击率=点击量/展现量\n到客率=到客量/点击量\n成交率=成交量/到客量\n\n请计算三个率",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo-16k",
+      temperature: 0.5,
+      max_tokens: 15000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+      createdAt: 1688899480537,
+  },
+{
+    avatar: "1f95a",
+    name: "商城数据分析No3",
+    context: [
+      {
+        id: "text-to-pic-0",
+        role: "system",
+        content:
+          "例如:商城名称\t展现量\t点击量\t在线咨询量\t表单提交量\t订单成交量\n毛戈平美妆官网\t189933\t20223\t8012\t906\t112\n丝芙兰官方网站\t265319\t32098\t18231\t729\t199\n兰蔻官方网站\t198164\t36522\t12821\t699\t174\n\n点击率=点击率/展现量\t\n在线咨询率=在线咨询率/点击率\n表单提交率=表单提交率/在线咨询率\n订单成交率=订单成交率/表单提交率\n\n请计算四个率",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo-16k",
+      temperature: 0.5,
+      max_tokens: 15000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+      createdAt: 1688899480537,
+  },
+{
     avatar: "1f9fe",
     name: "PDF/Word/Excel文档分析",
     context: [
