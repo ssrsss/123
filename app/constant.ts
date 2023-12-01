@@ -109,15 +109,15 @@ export const DEFAULT_MODELS = [
     available: true,
   },
   {
-    name: "gpt-4-v",
-    available: true,
-  },
-  {
     name: "gpt-4-all",
     available: true,
   },
   {
-    name: "gpt-4-dalle",
+    name: "gpt-4-gizmo",
+    available: true,
+  },
+  {
+    name: "gpt-4-1106-preview",
     available: true,
   },
   {
@@ -132,20 +132,12 @@ export const DEFAULT_MODELS = [
     name: "gpt-3.5-turbo-1106",
     available: true,
   },
-  {
-    name: "gpt-4-1106-preview",
-    available: true,
-  },
     {
     name: "stable-diffusion",
     available: true,
   },
   {
     name: "google-palm",
-    available: true,
-  },
-   {
-    name: "gpt-4-gizmo-g-jwR9FdCMq",
     available: true,
   },
 ] as const;
