@@ -89,14 +89,6 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
-    name: "claude-1.3-100k",
-    available: true,
-  },
-    {
-    name: "claude-instant-1",
-    available: true,
-  },
-  {
     name: "bing",
     available: true,
   },
