@@ -781,8 +781,16 @@ export function Settings() {
             ></input>
           </ListItem>
         </List>
-
-        <SyncItems />
+        <List>
+          <ModelConfigList
+            modelConfig={config.modelConfig}
+            updateConfig={(updater) => {
+              const modelConfig = { ...config.modelConfig };
+              updater(modelConfig);
+              config.update((config) => (config.modelConfig = modelConfig));
+            }}
+          />
+        </List>
         <List>
           <ListItem
             title={Locale.Settings.Prompt.Disable.Title}
@@ -810,16 +818,7 @@ export function Settings() {
           </ListItem>
         </List>
 
-        <List>
-          <ModelConfigList
-            modelConfig={config.modelConfig}
-            updateConfig={(updater) => {
-              const modelConfig = { ...config.modelConfig };
-              updater(modelConfig);
-              config.update((config) => (config.modelConfig = modelConfig));
-            }}
-          />
-        </List>
+        <SyncItems />
 
         {shouldShowPromptModal && (
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
