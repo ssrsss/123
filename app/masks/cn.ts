@@ -59,7 +59,7 @@ export const CN_MASKS: BuiltinMask[] = [
     createdAt: 1688899480537,
   },
 {
-    avatar: "1f4ea",
+    avatar: "1f389",
     name: "Dell-3绘画",
     context: [
       {
@@ -148,7 +148,7 @@ export const CN_MASKS: BuiltinMask[] = [
       createdAt: 1688899480537,
   },
   {
-    avatar: "1f4ed",
+    avatar: "1f4b3",
     name: "PPT生成助手",
     context: [
       {
