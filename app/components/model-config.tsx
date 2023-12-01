@@ -4,7 +4,7 @@ import Locale from "../locales";
 import { InputRange } from "./input-range";
 import { ListItem, Select } from "./ui-lib";
 import { useAllModels } from "../utils/hooks";
-
+const shouldShowComponent = false;
 export function ModelConfigList(props: {
   modelConfig: ModelConfig;
   updateConfig: (updater: (config: ModelConfig) => void) => void;
@@ -31,7 +31,7 @@ export function ModelConfigList(props: {
             </option>
           ))}
         </Select>
-      </ListItem>
+      </ListItem>{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.Temperature.Title}
         subTitle={Locale.Settings.Temperature.SubTitle}
@@ -50,7 +50,7 @@ export function ModelConfigList(props: {
             );
           }}
         ></InputRange>
-      </ListItem>
+      </ListItem>)}{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.TopP.Title}
         subTitle={Locale.Settings.TopP.SubTitle}
@@ -69,8 +69,8 @@ export function ModelConfigList(props: {
             );
           }}
         ></InputRange>
-      </ListItem>
-      <ListItem
+      </ListItem>)}
+      {shouldShowComponent && (<ListItem
         title={Locale.Settings.MaxTokens.Title}
         subTitle={Locale.Settings.MaxTokens.SubTitle}
       >
@@ -88,7 +88,7 @@ export function ModelConfigList(props: {
             )
           }
         ></input>
-      </ListItem>
+      </ListItem>)}{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.PresencePenalty.Title}
         subTitle={Locale.Settings.PresencePenalty.SubTitle}
@@ -108,29 +108,31 @@ export function ModelConfigList(props: {
             );
           }}
         ></InputRange>
-      </ListItem>
+      </ListItem>)}
 
-      <ListItem
-        title={Locale.Settings.FrequencyPenalty.Title}
-        subTitle={Locale.Settings.FrequencyPenalty.SubTitle}
-      >
-        <InputRange
-          value={props.modelConfig.frequency_penalty?.toFixed(1)}
-          min="-2"
-          max="2"
-          step="0.1"
-          onChange={(e) => {
-            props.updateConfig(
-              (config) =>
-                (config.frequency_penalty =
-                  ModalConfigValidator.frequency_penalty(
-                    e.currentTarget.valueAsNumber,
-                  )),
-            );
-          }}
-        ></InputRange>
-      </ListItem>
-
+      {shouldShowComponent && (
+  <ListItem
+    title={Locale.Settings.PresencePenalty.Title}
+    subTitle={Locale.Settings.PresencePenalty.SubTitle}
+  >
+    <InputRange
+      value={props.modelConfig.presence_penalty?.toFixed(1)}
+      min="-2"
+      max="2"
+      step="0.1"
+      onChange={(e) => {
+        props.updateConfig(
+          (config) =>
+            (config.presence_penalty =
+              ModalConfigValidator.presence_penalty(
+                e.currentTarget.valueAsNumber,
+              )),
+        );
+      }}
+    ></InputRange>
+  </ListItem>
+)}
+{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.InjectSystemPrompts.Title}
         subTitle={Locale.Settings.InjectSystemPrompts.SubTitle}
@@ -146,7 +148,7 @@ export function ModelConfigList(props: {
           }
         ></input>
       </ListItem>
-
+)}{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.InputTemplate.Title}
         subTitle={Locale.Settings.InputTemplate.SubTitle}
@@ -161,7 +163,7 @@ export function ModelConfigList(props: {
           }
         ></input>
       </ListItem>
-
+)}
       <ListItem
         title={Locale.Settings.HistoryCount.Title}
         subTitle={Locale.Settings.HistoryCount.SubTitle}
@@ -179,7 +181,7 @@ export function ModelConfigList(props: {
           }
         ></InputRange>
       </ListItem>
-
+{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.CompressThreshold.Title}
         subTitle={Locale.Settings.CompressThreshold.SubTitle}
@@ -197,7 +199,8 @@ export function ModelConfigList(props: {
             )
           }
         ></input>
-      </ListItem>
+      </ListItem>)}
+      {shouldShowComponent && (
       <ListItem title={Locale.Memory.Title} subTitle={Locale.Memory.Send}>
         <input
           type="checkbox"
@@ -208,7 +211,7 @@ export function ModelConfigList(props: {
             )
           }
         ></input>
-      </ListItem>
+      </ListItem>)}
     </>
   );
 }
