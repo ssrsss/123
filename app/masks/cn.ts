@@ -147,6 +147,70 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
       createdAt: 1688899480537,
   },
+  {
+    avatar: "1f4ed",
+    name: "PPT生成助手",
+    context: [
+      {
+        id: "text-to-pic-0",
+        role: "system",
+        content:
+          "我现在是一名PPT制作专家，生成的内容大纲子节点内容以markdown形式发送给您。请提供PPT的主题，需要多少个大节点，每个大节点需要多少个子节点。每个子节点需要多少字的内容，请您发送以上需要的信息",
+        date: "",
+      },
+      {
+          id: "text-to-pic-0",
+        role: "assistant",
+        content:
+          "生成出来的文字模板可查看视频教程生成PPT文件[点击查看教程](http://tc.lzlspyxgs.asia/ppt.mp4)",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo-16k",
+      temperature: 0.5,
+      max_tokens: 15000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+      createdAt: 1688899480537,
+  },
+    {
+    avatar: "1f4e6",
+    name: "思维导图生成助手",
+    context: [
+      {
+        id: "text-to-pic-0",
+        role: "system",
+        content:
+          "你好，我可以为您生成思维导图的大纲，生成的内容以markdown形式发送给您。\n例如：我需要一个关于太阳系的思维导图大纲，需要3个主题，每个主题3个子主题。\n\n请发送您需要的思维导图主题以及具体的主题数量和子主题数量",
+        date: "",
+      },
+      {
+          id: "text-to-pic-0",
+        role: "assistant",
+        content:
+          "1.教程中涉及到的思维导图软件为官方版本：[立即下载](https://xmind.cn/)\n2.将生成好的大纲复制，新建一个文档，复制进行保存，最后将文件后缀改为md格式，后续跟着教程即可\n\n生成出来的文字模板可查看视频教程生成思维导图文件:[点击查看教程](http://tc.lzlspyxgs.asia/swdt.mp4)",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-3.5-turbo-16k",
+      temperature: 0.5,
+      max_tokens: 15000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+      createdAt: 1688899480537,
+  },
 {
     avatar: "1f50d",
     name: "智猿搜题帮",
@@ -227,70 +291,6 @@ export const CN_MASKS: BuiltinMask[] = [
         role: "system",
         content:
           "我会将您发送的文章句子结构打乱，同义词进行替换，句子改变语序已达到降重的目的\n请在文章后备注是否需要扩充、删减、学术化内容操作。\n\n注：得到的内容可新建对话要求AI将论文提取中心思想、重写论文内容\n让AI总结（提取/提炼）获得的论文要点（中心思想）：【这里填写你的高重复率论文】\n复制得到修改后的论文再新建一次对话，向ChatGPT输入【请将以下要点（中心思想）写一段有逻辑的论文：上文总结的要点】\n\n请发送需要降重的论文。",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-3.5-turbo-16k",
-      temperature: 0.5,
-      max_tokens: 15000,
-      presence_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-      createdAt: 1688899480537,
-  },
-    {
-    avatar: "1f4ea",
-    name: "PPT模板生成",
-    context: [
-      {
-        id: "text-to-pic-0",
-        role: "system",
-        content:
-          "我现在是一名PPT制作专家，生成的内容大纲子节点内容以markdown形式发送给您。请提供PPT的主题，需要多少个大节点，每个大节点需要多少个子节点。每个子节点需要多少字的内容，请您发送以上需要的信息",
-        date: "",
-      },
-      {
-          id: "text-to-pic-0",
-        role: "assistant",
-        content:
-          "生成出来的文字模板可查看视频教程生成PPT文件[点击查看教程](http://47.115.219.124:8080/directlink/Ali/PPT%E7%94%9F%E6%88%90.mp4)",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-3.5-turbo-16k",
-      temperature: 0.5,
-      max_tokens: 15000,
-      presence_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-      createdAt: 1688899480537,
-  },
-    {
-    avatar: "1f4e6",
-    name: "思维导图生成",
-    context: [
-      {
-        id: "text-to-pic-0",
-        role: "system",
-        content:
-          "你好，我可以为您生成思维导图的大纲，生成的内容以markdown形式发送给您。\n例如：我需要一个关于太阳系的思维导图大纲，需要3个主题，每个主题3个子主题。\n\n请发送您需要的思维导图主题以及具体的主题数量和子主题数量",
-        date: "",
-      },
-      {
-          id: "text-to-pic-0",
-        role: "assistant",
-        content:
-          "1.教程中涉及到的思维导图软件为官方版本：[立即下载](https://xmind.cn/)\n2.将生成好的大纲复制，新建一个文档，复制进行保存，最后将文件后缀改为md格式，后续跟着教程即可\n\n生成出来的文字模板可查看视频教程生成思维导图文件:[点击查看教程](http://47.115.219.124:8080/directlink/Ali/swdt.mp4)",
         date: "",
       },
     ],
