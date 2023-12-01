@@ -57,7 +57,9 @@ function reorder<T>(list: T[], startIndex: number, endIndex: number): T[] {
   result.splice(endIndex, 0, removed);
   return result;
 }
-
+function goShang() {
+  window.location.href = '/#/';
+}
 export function MaskAvatar(props: { mask: Mask }) {
   return props.mask.avatar !== DEFAULT_MASK_AVATAR ? (
     <Avatar avatar={props.mask.avatar} />
@@ -86,7 +88,7 @@ export function MaskConfig(props: {
       mask.syncGlobalConfig = false;
     });
   };
-
+ 
   const copyMaskLink = () => {
     const maskLink = `${location.protocol}//${location.host}/#${Path.NewChat}?mask=${props.mask.id}`;
     copyToClipboard(maskLink);
@@ -469,7 +471,7 @@ export function MaskPage() {
               <IconButton
                 icon={<CloseIcon />}
                 bordered
-                onClick={() => navigate(-1)}
+                onClick={goShang}
               />
             </div>
           </div>
