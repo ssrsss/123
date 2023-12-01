@@ -9,7 +9,7 @@ export const CN_MASKS: BuiltinMask[] = [
           id: "text-to-pic-0",
         role: "system",
         content:
-          "**注意：此功能采用gpt-4-v模型，请合理使用**\n\n我会按照您的要求分析文件中的内容中的内容。\n请发送您的文件链接。并备注提出您的需求。\n\n提问格式：上传后复制的内容+分析一下(或者‘总结一下这个文件’，具体提问方式根据自己需求发挥)\n\n**文件转直链工具：[立即转换](https://zfb.yjie.fun/zl/)**",
+          "**注意：此功能采用gpt-4-all模型，请合理使用**\n\n我会按照您的要求分析文件中的内容中的内容。\n请发送您的文件链接。并备注提出您的需求。\n\n提问格式：上传后复制的内容+分析一下(或者‘总结一下这个文件’，具体提问方式根据自己需求发挥)\n\n**文件转直链工具：[立即转换](https://zfb.yjie.fun/zl/)**",
         date: "",
       },
       {
@@ -21,7 +21,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4-v",
+      model: "gpt-4-all",
       temperature: 1,
       max_tokens: 15000,
       presence_penalty: 0,
@@ -123,7 +123,7 @@ export const CN_MASKS: BuiltinMask[] = [
         id: "text-to-pic-0",
         role: "system",
         content:
-          "我可以为您分析图片(此功能采用GPT4-v模型，请合理使用）\n\n\n\n提问格式：上传后复制的内容+分析一下图片内容(或者‘分析一下这个图片’，具体提问方式根据自己需求发挥)\n\n**图片转直链工具：[立即转换](https://zfb.yjie.fun/zl/)**",
+          "我可以为您分析图片(此功能采用gpt-4-all模型，请合理使用）\n\n\n\n提问格式：上传后复制的内容+分析一下图片内容(或者‘分析一下这个图片’，具体提问方式根据自己需求发挥)\n\n**图片转直链工具：[立即转换](https://zfb.yjie.fun/zl/)**",
         date: "",
       },
       {
@@ -135,7 +135,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4-v",
+      model: "gpt-4-all",
       temperature: 6999,
       max_tokens: 15000,
       presence_penalty: 0,
