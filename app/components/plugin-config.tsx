@@ -2,7 +2,7 @@ import { PluginConfig } from "../store";
 
 import Locale from "../locales";
 import { ListItem } from "./ui-lib";
-
+const shouldShowComponent = false;
 export function PluginConfigList(props: {
   pluginConfig: PluginConfig;
   updateConfig: (updater: (config: PluginConfig) => void) => void;
@@ -11,7 +11,6 @@ export function PluginConfigList(props: {
     <>
       <ListItem
         title={Locale.Settings.Plugin.Enable.Title}
-        subTitle={Locale.Settings.Plugin.Enable.SubTitle}
       >
         <input
           type="checkbox"
@@ -22,7 +21,7 @@ export function PluginConfigList(props: {
             )
           }
         ></input>
-      </ListItem>
+      </ListItem>{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.Plugin.MaxIteration.Title}
         subTitle={Locale.Settings.Plugin.MaxIteration.SubTitle}
@@ -39,7 +38,7 @@ export function PluginConfigList(props: {
             )
           }
         ></input>
-      </ListItem>
+      </ListItem>)}{shouldShowComponent && (
       <ListItem
         title={Locale.Settings.Plugin.ReturnIntermediateStep.Title}
         subTitle={Locale.Settings.Plugin.ReturnIntermediateStep.SubTitle}
@@ -54,7 +53,7 @@ export function PluginConfigList(props: {
             )
           }
         ></input>
-      </ListItem>
+      </ListItem>)}
     </>
   );
 }
