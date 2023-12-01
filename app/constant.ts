@@ -113,10 +113,6 @@ export const DEFAULT_MODELS = [
     available: true,
   },
   {
-    name: "gpt-4-gizmo",
-    available: true,
-  },
-  {
     name: "gpt-4-1106-preview",
     available: true,
   },
