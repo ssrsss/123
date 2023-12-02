@@ -2,7 +2,7 @@ import styles from "./au.scss";
 import { useEffect, useRef } from "react";
 
 export function AuPage() {
-  const webpageRef = useRef(null);
+  const webpageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function loadWebpage() {
