@@ -21,6 +21,7 @@ export enum Path {
   Masks = "/masks",
   Plugins = "/plugins",
   Auth = "/auth",
+  Au = "/au",
 }
 
 export enum ApiPath {
