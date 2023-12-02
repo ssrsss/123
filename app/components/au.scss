@@ -1,0 +1,17 @@
+/* 隐藏滚动条 */
+body {
+  overflow: hidden;
+}
+
+/* 保留滚动条的空间，以防止页面内容被截断 */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

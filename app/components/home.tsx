@@ -29,6 +29,8 @@ import { AuthPage } from "./auth";
 import { getClientConfig } from "../config/client";
 import { api } from "../client/api";
 import { useAccessStore } from "../store";
+import { AuPage } from "./au";
+import { ChePage } from "./duo";
 
 export function Loading(props: { noLogo?: boolean }) {
   return (
@@ -56,6 +58,14 @@ const MaskPage = dynamic(async () => (await import("./mask")).MaskPage, {
 });
 
 const Plugins = dynamic(async () => (await import("./plugin")).PluginPage, {
+  loading: () => <Loading noLogo />,
+});
+
+const DynamicAuPage = dynamic(async () => (await import("./au")).AuPage, {
+  loading: () => <Loading noLogo />,
+});
+
+const DynamicChePage = dynamic(async () => (await import("./au")).ChePage, {
   loading: () => <Loading noLogo />,
 });
 
@@ -163,6 +173,8 @@ function Screen() {
               <Route path={Path.Plugins} element={<Plugins />} />
               <Route path={Path.Chat} element={<Chat />} />
               <Route path={Path.Settings} element={<Settings />} />
+              <Route path={Path.Au} element={<AuPage />} />
+              <Route path={Path.Duo} element={<ChePage />} />
             </Routes>
           </div>
         </>
