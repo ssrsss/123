@@ -62,7 +62,7 @@ function goBaidu() {
   window.location.href = 'http://bj.yjie.fun/abc/';
 }
 function goShang() {
-  window.location.href = 'https://zfb.yjie.fun/zl/';
+  window.location.href = '#/au';
 }
 function useDragSideBar() {
   const limit = (x: number) => Math.min(MAX_SIDEBAR_WIDTH, x);
