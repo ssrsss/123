@@ -1,6 +1,9 @@
+import { IconButton } from "./button";
 import styles from "./au.scss";
 import { useEffect, useRef } from "react";
-
+function goBaidu() {
+  window.location.href = '#/chat';
+}
 export function AuPage() {
   const webpageRef = useRef<HTMLDivElement>(null);
 
@@ -23,8 +26,9 @@ export function AuPage() {
   }, []);
 
   return (
-    <div className={styles["auth-page"]} style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", backgroundColor: "white" }}>
+    <div className={styles["auth-page"]} style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100vh", backgroundColor: "white" }}>
       <div ref={webpageRef} style={{ width: "100%", height: "100%", overflow: "hidden" }}></div>
+      <button style={{ marginTop: "20px", marginBottom: "20px", width: "100px", height: "40px", borderRadius: "20px", backgroundColor: "black", color: "white", borderWidth: "0px" }} onClick={goBaidu}>返回聊天</button>
     </div>
   );
 }
