@@ -26,31 +26,6 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
     createdAt: 1688899480537,
   },
-{
-    avatar: "1f389",
-    name: "Dell-3绘画",
-    context: [
-      {
-          id: "text-to-pic-0",
-        role: "system",
-        content:
-          "请发送您需要创作的内容,我可以识图、绘图、改图\n**注意：此功能采用dall-e-3模型(大约0.05一张图片)，请合理使用**\n\n**教程**:绘图:发送您想要绘图的基本要求\n识图：使用下面工具上传图片，复制链接，返回本页面复制进输入框并提问。\n改图：使用下面工具上传图片，复制链接，返回本页面复制进输入框并提出绘画要求。\n\n**图片转直链工具：[立即转换](https://zfb.yjie.fun/zl/)**",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "dall-e-3",
-      temperature: 1,
-      max_tokens: 15000,
-      presence_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 4,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480537,
-  },
   {
     avatar: "1f4b3",
     name: "PPT生成助手",
@@ -599,7 +574,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-3.5-turbo",
+      model: "gpt-3.5-turbo-16k",
       temperature: 0.5,
       max_tokens: 3500,
       presence_penalty: 0,
@@ -699,7 +674,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-3.5-turbo",
+      model: "gpt-3.5-turbo-16k",
       temperature: 1,
       max_tokens: 3500,
       presence_penalty: 0,
