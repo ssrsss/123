@@ -56,10 +56,7 @@ function useHotKey() {
   });
 }
 function goBaidu() {
-  window.location.href = 'http://bj.yjie.fun/abc/';
-}
-function goShang() {
-  window.location.href = '#/au';
+  window.location.href = 'https://ai1.yjie.fun/';
 }
 function useDragSideBar() {
   const limit = (x: number) => Math.min(MAX_SIDEBAR_WIDTH, x);
@@ -197,9 +194,9 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header-bar"]}>
        <IconButton
          icon={<QuaninIcon />}
-         text="授权产品"
+         text="切换高级版"
          className={styles["sidebar-bar-button"]}
-         onClick={() => navigate(Path.Auth, { state: { fromHome: true } })}
+         onClick={goBaidu}
          shadow
       />
       </div>
