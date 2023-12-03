@@ -50,9 +50,11 @@ export const getServerSideConfig = () => {
       .map((m) => "-" + m.name)
       .join(",");
   }
-
+  const apiKeys = (process.env.OPENAI_API_KEY ?? '').split(',')
+  const apikey = apiKeys[Math.floor(Math.random() * apiKeys.length)]
+  
   return {
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: apikey,
     code: process.env.CODE,
     codes: ACCESS_CODES,
     needCode: ACCESS_CODES.size > 0,
