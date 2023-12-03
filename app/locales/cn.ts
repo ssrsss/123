@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "你好,有什么可以帮助您的吗？\n\n> 本产品为天工智能Ai试用版本,采用3.5模型\n一分钟全站可请求10次\n如需解除限制或使用更高级模型可开通多功能版本。\n\n- 天工智能Ai多功能高级版：[立即访问](https://ai1.yjie.fun/)",
+    BotHello: "你好,有什么可以帮助您的吗？\n\n> 本产品为试用版本,采用3.5模型\n对话：一分钟全站可请求10次\n绘画：一分钟全站可请求1次\n如需解除次数限制或使用更高级模型可开通多功能版本。\n\n- 天工智能Ai多功能高级版：[立即访问](https://ai1.yjie.fun/)",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
