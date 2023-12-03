@@ -7,7 +7,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "你好,有什么可以帮助您的吗？\n> 您似乎为授权哦~\n\n> 模型推荐:\nGPT3.5（gpt-3.5-turbo-1106）\nGPT4（gpt-4-1106-preview)\n原因:相比初始模型，费用更低,具体可查看：首页-查看更多-计费标准\n\n- 桌面端安装：[立即查看](https://zfb.yjie.fun/ce/)\n- 全球访问加速线路(网站访问缓慢可使用此线路)：[立即访问](https://yjie.fun)",
+      "你好,有什么可以帮助您的吗？\n\n> 本产品为试用版本,采用3.5模型,一分钟全站可请求10次,如需解除限制或使用高级模型可开通多功能版本。\n\n- 天工智能Ai多功能高级版：[立即访问](https://ai1.yjie.fun/)",
   },
   Auth: {
     Title: "设备未授权",
@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "你好,有什么可以帮助您的吗？\n\n> 模型费用较低推荐:\nGPT3.5（gpt-3.5-turbo-1106）\nGPT4（gpt-4-1106-preview)\n原因:相比初始模型，费用更低,具体可查看：首页-查看更多-计费标准\n\n- 桌面端安装：[立即查看](https://zfb.yjie.fun/ce/)\n- 全球访问加速线路(网站访问缓慢可使用此线路)：[立即访问](https://yjie.fun)",
+    BotHello: "你好,有什么可以帮助您的吗？\n\n> 本产品为试用版本,采用3.5模型,一分钟全站可请求10次,如需解除限制或使用高级模型可开通多功能版本。\n\n- 天工智能Ai多功能高级版：[立即访问](https://ai1.yjie.fun/)",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
