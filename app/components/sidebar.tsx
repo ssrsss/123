@@ -4,13 +4,11 @@ import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
-import JihuoIcon from "../icons/jihuo.svg";
 import GithubIcon from "../icons/github.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import TitiIcon from "../icons/ti.svg";
 import QuaninIcon from "../icons/quan.svg";
-import GeninIcon from "../icons/gen.svg";
 import CloseIcon from "../icons/close.svg";
 import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
@@ -26,7 +24,6 @@ import {
   MAX_SIDEBAR_WIDTH,
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
-  GO_URL,
   Path,
   REPO_URL,
 } from "../constant";
@@ -165,7 +162,7 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          天工智能AI
+          天工智能AI试用版
         </div>
         <div className={styles["sidebar-sub-title"]}>
           欢迎您,我是您的多功能AI问答助理~
@@ -205,22 +202,6 @@ export function SideBar(props: { className?: string }) {
          onClick={() => navigate(Path.Auth, { state: { fromHome: true } })}
          shadow
       />
-        <IconButton
-         icon={<JihuoIcon />}
-         text="文档上传"
-         className={styles["sidebar-bar-button"]}
-         onClick={goShang}
-         shadow
-      />
-      </div>
-      <div className={styles["sidebar-header-bar"]}>
-       <IconButton
-         icon={<GeninIcon />}
-         text="查看更多"
-         className={styles["sidebar-bar-button"]}
-         onClick={goBaidu}
-         shadow
-      />
       </div>
 
 
@@ -251,11 +232,6 @@ export function SideBar(props: { className?: string }) {
             <Link to={Path.Settings}>
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
-          </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={GO_URL} target="_blank" rel="noopener noreferrer">
-              <IconButton icon={<TitiIcon />} shadow />
-            </a>
           </div>
           <div className={styles["sidebar-action"]}>
             <a href={REPO_URL} target="_blank">
