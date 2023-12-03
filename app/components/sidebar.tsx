@@ -286,10 +286,6 @@ export function SideBar(props: { className?: string }) {
       >
         <DragIcon />
       </div>
-      <br></br><div className={styles["sidebar-beian-title"]} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <img src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png" alt="Your Image" style={{ width: '14px', height: '14px', marginRight: '5px' }} />
-          皖ICP备2023098710号
-      </div>
     </div>
   );
 }
