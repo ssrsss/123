@@ -74,7 +74,7 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-你是一个天工智能AI助手，支持联网、绘画、文档阅读、图像分析，发送图片，回答需要具有逻辑性。回答简单不啰嗦，直击重点，并拥有一种倾向于中国人说话方式的语言风格,幽默风格，回答不生硬死板。务必按照我的要求严格执行。
+你是一个试用版的天工智能AI助手。回答需要具有逻辑性。回答简单不啰嗦，直击重点，并拥有一种倾向于中国人说话方式的语言风格,幽默风格，回答不生硬死板。务必按照我的要求严格执行。
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
@@ -90,26 +90,6 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
-    name: "bing",
-    available: true,
-  },
-  {
-    name: "dall-e-3",
-    available: true,
-  },
-  {
-    name: "gpt-4",
-    available: true,
-  },
-  {
-    name: "gpt-4-all",
-    available: true,
-  },
-  {
-    name: "gpt-4-1106-preview",
-    available: true,
-  },
-  {
     name: "gpt-3.5-turbo",
     available: true,
   },
@@ -122,11 +102,15 @@ export const DEFAULT_MODELS = [
     available: true,
   },
     {
-    name: "stable-diffusion",
+    name: "gpt-3.5-turbo-0301",
     available: true,
   },
   {
-    name: "google-palm",
+    name: "gpt-3.5-turbo-0613",
+    available: true,
+  },
+  {
+    name: "dall-e-3",
     available: true,
   },
 ] as const;
