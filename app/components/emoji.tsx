@@ -8,29 +8,9 @@ import { ModelType } from "../store";
 
 import BotIcon from "../icons/bot.svg";
 import BlackBotIcon from "../icons/black-bot.svg";
-import { isIOS, isMacOS } from "../utils"; // Import the isIOS & isMacOS functions from the utils file
 
 export function getEmojiUrl(unified: string, style: EmojiStyle) {
-  const isAppleDevice = isMacOS() || isIOS();
-  const emojiDataSource =
-    (isAppleDevice && style === "apple") ||
-    (!isAppleDevice && style === "google")
-      ? "emoji-datasource-apple"
-      : "emoji-datasource-google";
-
-  const emojiStyle = style === "apple" && isAppleDevice ? "apple" : "google";
-
-  return `https://cdn.staticfile.org/${emojiDataSource}/14.0.0/img/${emojiStyle}/64/${unified}.png`;
-}
-
-export function debounce(func: Function, delay: number) {
-  let timeoutId: NodeJS.Timeout;
-  return function (...args: any[]) {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
-      func.apply(null, args);
-    }, delay);
-  };
+  return `https://cdn.staticfile.org/emoji-datasource-apple/14.0.0/img/${style}/64/${unified}.png`;
 }
 
 export function AvatarPicker(props: {
@@ -53,9 +33,9 @@ export function Avatar(props: { model?: ModelType; avatar?: string }) {
     return (
       <div className="no-dark">
         {props.model?.startsWith("gpt-4") ? (
-          <BlackBotIcon className="user-avatar" />
+          <EmojiAvatar avatar="http://tc.lzlspyxgs.asia/%E5%BE%AE%E4%BF%A1%20%281%29.png" size={35} />
         ) : (
-          <BlackBotIcon className="user-avatar" />
+          <EmojiAvatar avatar="http://tc.lzlspyxgs.asia/%E5%BE%AE%E4%BF%A1%20%281%29.png" size={35} />
         )}
       </div>
     );
@@ -63,17 +43,13 @@ export function Avatar(props: { model?: ModelType; avatar?: string }) {
 
   return (
     <div className="user-avatar">
-      {props.avatar && <EmojiAvatar avatar={props.avatar} />}
+      {props.avatar && <img src={props.avatar} className="user-avatar" />}
     </div>
   );
 }
 
 export function EmojiAvatar(props: { avatar: string; size?: number }) {
   return (
-    <Emoji
-      unified={props.avatar}
-      size={props.size ?? 18}
-      getEmojiUrl={getEmojiUrl}
-    />
+    <img src={props.avatar} style={{ width: props.size, height: props.size }} />
   );
 }
