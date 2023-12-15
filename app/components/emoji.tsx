@@ -33,9 +33,9 @@ export function Avatar(props: { model?: ModelType; avatar?: string }) {
     return (
       <div className="no-dark">
         {props.model?.startsWith("gpt-4") ? (
-          <EmojiAvatar avatar="http://tc.lzlspyxgs.asia/%E5%BE%AE%E4%BF%A1%20%281%29.png" size={35} />
+          <BlackBotIcon className="user-avatar" />
         ) : (
-          <EmojiAvatar avatar="http://tc.lzlspyxgs.asia/%E5%BE%AE%E4%BF%A1%20%281%29.png" size={35} />
+          <BotIcon className="user-avatar" />
         )}
       </div>
     );
@@ -43,13 +43,17 @@ export function Avatar(props: { model?: ModelType; avatar?: string }) {
 
   return (
     <div className="user-avatar">
-      {props.avatar && <img src={props.avatar} className="user-avatar" />}
+      {props.avatar && <EmojiAvatar avatar={props.avatar} />}
     </div>
   );
 }
 
 export function EmojiAvatar(props: { avatar: string; size?: number }) {
   return (
-    <img src={props.avatar} style={{ width: props.size, height: props.size }} />
+    <Emoji
+      unified={props.avatar}
+      size={props.size ?? 18}
+      getEmojiUrl={getEmojiUrl}
+    />
   );
 }
