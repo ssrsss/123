@@ -29,7 +29,7 @@ export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // timestamp, to merge state
 
   submitKey: isMacOS() ? SubmitKey.MetaEnter : SubmitKey.CtrlEnter,
-  avatar: "https://tc.lzlspyxgs.asia/ChatGPT%E5%9B%BE%E6%A0%87/%E8%81%8A%E4%B8%80%E8%81%8A%E9%80%89%E4%B8%AD.png",
+  avatar: "1f603",
   fontSize: 14,
   theme: Theme.Auto as Theme,
   tightBorder: !!getClientConfig()?.isApp,
