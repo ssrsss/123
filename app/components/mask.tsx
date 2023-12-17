@@ -567,18 +567,6 @@ export function MaskPage() {
             onClose={closeMaskModal}
             actions={[
               <IconButton
-                icon={<DownloadIcon />}
-                text={Locale.Mask.EditModal.Download}
-                key="export"
-                bordered
-                onClick={() =>
-                  downloadAs(
-                    JSON.stringify(editingMask),
-                    `${editingMask.name}.json`,
-                  )
-                }
-              />,
-              <IconButton
                 key="copy"
                 icon={<CopyIcon />}
                 bordered
