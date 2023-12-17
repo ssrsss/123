@@ -29,7 +29,7 @@ async function search(
   const headers = new Headers();
   headers.append("User-Agent", getRandomUserAgent());
   const resp = await fetch(
-    `https://soupian.pro/search?key=${encodeURIComponent(
+    `https://www.baidu.com/s?f=8&ie=utf-8&rn=${maxResults}&wd=${encodeURIComponent(
       input,
     )}`,
     {
