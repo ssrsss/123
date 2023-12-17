@@ -1,5 +1,3 @@
-import { decode } from "html-entities";
-import { convert as htmlToText } from "html-to-text";
 import { Tool } from "langchain/tools";
 import * as cheerio from "cheerio";
 import { getRandomUserAgent } from "./ua_tools";
@@ -38,13 +36,14 @@ async function search(
       headers: headers,
     },
   );
-  const respCheerio = cheerio.load(await resp.text());
+  const respText = await resp.text();
+  const respCheerio = cheerio.load(respText);
   respCheerio("div.c-container.new-pmd").each((i, elem) => {
     const item = cheerio.load(elem);
     const linkElement = item("a");
     const url = (linkElement.attr("href") ?? "").trim();
     if (url !== "" && url !== "#") {
-      const title = decode(linkElement.text());
+      const title = linkElement.text();
       const description = item.text().replace(title, "").trim();
       results.results.push({
         url,
@@ -70,11 +69,11 @@ export class BaiduSearch extends Tool {
 
     const results = searchResults.results
       .slice(0, this.maxResults)
-      .map(({ title, description, url }) => htmlToText(description))
+      .map(({ title, description, url }) => `- [${title}](${url})\n  ${description}`)
       .join("\n\n");
     return results;
   }
 
   description =
-    "a search engine. useful for when you need to answer questions about current events. input should be a search query.When you need to send a message to a user, you must reply to the user in Chinese";
+    "a search engine. useful for when you need to answer questions about current events. input should be a search query.";
 }
