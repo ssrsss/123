@@ -7,7 +7,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "你好,有什么可以帮助您的吗？\n\n> 本产品为试用版本,采用3.5模型\n次数限制：一分钟全站可对话10次\n如需解除次数限制或使用更高级模型可开通多功能版本。\n\n- 天工智能Ai多功能高级版：[立即访问](https://ai1.yjie.fun/)",
+      "暂不对外开放，开放时间另行通知~",
   },
   Auth: {
     Title: "设备未授权",
@@ -144,7 +144,7 @@ const cn = {
       },
     },
     Lang: {
-      Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
+      Name: "Language", // ATTENTION: if you wanna add a new translation, 你好,有什么可以帮助您的吗？\n\n> 本产品为试用版本,采用3.5模型\n次数限制：一分钟全站可对话10次\n如需解除次数限制或使用更高级模型可开通多功能版本。\n\n- 天工智能Ai多功能高级版：[立即访问](https://ai1.yjie.fun/)please do not translate this value, leave it as `Language`
       All: "所有语言",
     },
     Avatar: "头像",
@@ -325,7 +325,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "New Chat",
-    BotHello: "你好,有什么可以帮助您的吗？\n\n> 本产品为试用版本,采用3.5模型\n次数限制：一分钟全站可对话10次\n如需解除次数限制或使用更高级模型可开通多功能版本。\n\n- 天工智能Ai多功能高级版：[立即访问](https://ai1.yjie.fun/)",
+    BotHello: "暂不对外开放，开放时间另行通知~",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
