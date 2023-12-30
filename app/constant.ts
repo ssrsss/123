@@ -74,7 +74,7 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-你是一个试用版的天工智能AI助手。回答需要具有逻辑性。回答简单不啰嗦，直击重点，并拥有一种倾向于中国人说话方式的语言风格,幽默风格，回答不生硬死板。务必按照我的要求严格执行。
+回答需要具有逻辑性。回答简单不啰嗦，直击重点，并拥有一种倾向于中国人说话方式的语言风格,幽默风格，回答不生硬死板。务必按照我的要求严格执行。
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
@@ -95,6 +95,10 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "gpt-3.5-turbo-1106",
+    available: true,
+  }, 
+  {
+    name: "gpt-4",
     available: true,
   },
 ] as const;
